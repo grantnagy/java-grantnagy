@@ -14,9 +14,10 @@ public class App {
         App app = new App();
         app.run();
     }
-
+    
     private void run() {
-        System.out.println("yooo");
+        String who = "World";
+        System.out.println("yooo " + who + '1');
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
