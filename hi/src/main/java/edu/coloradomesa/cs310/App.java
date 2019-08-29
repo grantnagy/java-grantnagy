@@ -33,7 +33,7 @@ public class App {
     }
     
     private void run() {
-        System.out.println(getGreeting() + " " + getWho() + " " + '!');
+        System.out.println(getGreeting() + " " + getWho() + '!');
     }
     
 }
