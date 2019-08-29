@@ -10,6 +10,16 @@ package edu.coloradomesa.cs310;
  * @author Grant
  */
 public class App {
+    
+    private String who = "world";
+    public String getWho() {
+        return who;
+    }
+
+    public void setWho(String who) {
+        this.who = who;
+    }
+
     private String greeting = "Hello";
     public String getGreeting() {
         return greeting;
