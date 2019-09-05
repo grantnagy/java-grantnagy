@@ -35,5 +35,13 @@ public class App {
     private void run() {
         System.out.println(getGreeting() + " " + getWho() + '!');
     }
+
+    void setLanguage(String en) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    String getMessage() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

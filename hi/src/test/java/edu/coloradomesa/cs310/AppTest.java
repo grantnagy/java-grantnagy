@@ -47,16 +47,26 @@ public class AppTest {
     }
     
     
-    /*
+    
     @Test
-    public void testGetNonDefaultWho() {
-        System.out.println("getWho");
-        App instance = new App();
-        String expResult = "";
-        String result = instance.getWho();
-        assertEquals(expResult, result);
-        fail("The test case is a prototype.");
+    public void testinEnglish() 
+    {
+        App app = new App();
+        app.setLanguage("en");
+        String message = app.getMessage();
+        String expect = "Hello World!";
+        assertEquals(expect, message);
     }
+    @Test
+    public void testinChinese() 
+    {
+        App app = new App();
+        app.setLanguage("cn");
+        String message = app.getMessage();
+        String expect = "你好，世界";
+        assertEquals(expect, message);
+    }
+    /*
     @Test
     public void testSetWho() {
         System.out.println("setWho");
