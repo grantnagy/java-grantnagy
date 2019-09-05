@@ -11,7 +11,7 @@ package edu.coloradomesa.cs310;
  */
 public class App {
     
-    private String who = "world";
+    private String who = "World";
     public String getWho() {
         return who;
     }
