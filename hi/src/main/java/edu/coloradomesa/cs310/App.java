@@ -32,15 +32,28 @@ public class App {
         app.run();
     }
     
+    
     private void run() {
         System.out.println(getGreeting() + " " + getWho() + '!');
     }
 
-    void setLanguage(String en) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private String language = "en";
+    void setLanguage(String language) {
+        if (language.equals("en") || language.equals("cn"))
+        {
+            this.language = language;
+        }
+        else
+        {
+        throw new UnsupportedOperationException("Nah");
+    }
     }
 
     String getMessage() {
+        switch(language){
+            case "en": return "Hello World!";
+            case "cn": return "你好，世界";
+        }
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
