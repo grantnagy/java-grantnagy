@@ -5,6 +5,10 @@
  */
 package edu.coloradomesa.cs310;
 
+import java.io.ByteArrayOutputStream;
+import java.io.OutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
 import org.junit.*;
 import static org.junit.Assert.*;
 /**
@@ -13,9 +17,37 @@ import static org.junit.Assert.*;
  */
 public class AppTest {
     
-    public AppTest() {
+     public AppTest() {
+    }
+
+    @BeforeClass
+    public static void setUpClass() throws Exception {
+    }
+
+    @AfterClass
+    public static void tearDownClass() throws Exception {
+    }
+
+    @Before
+    public void setUp() throws Exception {
+    }
+
+    @After
+    public void tearDown() throws Exception {
     }
     
+    @Test
+    public void testGetDefaultWho()
+    {
+        System.out.println("getWho");
+        App instance = new App();
+        String expResult = "World";
+        String result = instance.getWho();
+        assertEquals(expResult, result);
+    }
+    
+    
+    /*
     @Test
     public void testGetNonDefaultWho() {
         System.out.println("getWho");
@@ -23,6 +55,7 @@ public class AppTest {
         String expResult = "";
         String result = instance.getWho();
         assertEquals(expResult, result);
+        fail("The test case is a prototype.");
     }
     @Test
     public void testSetWho() {
@@ -33,24 +66,17 @@ public class AppTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-
-    /**
-     * Test of getGreeting method, of class App.
-     */
+*/
     @Test
     public void testGetGreeting() {
         System.out.println("getGreeting");
         App instance = new App();
-        String expResult = "";
+        String expResult = "Hello";
         String result = instance.getGreeting();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    
     }
-
-    /**
-     * Test of setGreeting method, of class App.
-     */
+/*
     @Test
     public void testSetGreeting() {
         System.out.println("setGreeting");
@@ -61,9 +87,6 @@ public class AppTest {
         fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of main method, of class App.
-     */
     @Test
     public void testMain() throws Exception {
         System.out.println("main");
@@ -72,5 +95,5 @@ public class AppTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
-    
+    */
 }
