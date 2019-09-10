@@ -2,7 +2,7 @@
 | Name | Value |
 |---:|:---|
 | **Course** | CSCI310-001-24569 Adv Prog: Java | Fall 2019 |
-| **Student** | A Student |
+| **Student** | Grant |
 | **Mav User**            | gnagy |
 | **Github User**         | grantnagy |
 | **Repository**          | https://github.com/grantnagy/java-grantnagy |
