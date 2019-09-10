@@ -6,7 +6,7 @@
 | **Mav User**            | gnagy |
 | **Github User**         | grantnagy |
 | **Repository**          | https://github.com/grantnagy/java-grantnagy |
-| **Syllabus**            | https://docs.google.com/document/d/1wh9IBGTZq71OPv8XJxg3MWuiCeUgdY-DmaK4opk8Djw/edit |
+| **Syllabus**            | https://docs.google.com/document/d/1aFQyacIRyMSn8QLzlA014gjLq1sfTqJQzyBdr_S7Op0/edit |
 
 ## Assignments
 
