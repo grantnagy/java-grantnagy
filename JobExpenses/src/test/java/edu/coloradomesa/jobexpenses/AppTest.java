@@ -13,6 +13,18 @@ import java.io.ByteArrayOutputStream;
  */
 public class AppTest {
 
+    App ex1() {
+        App app = new App();
+        app.a = 3;
+        app.b = 1;
+        app.c = -2;
+        app.d = 3;
+        app.expenses = 2;
+        return app;
+    }
+    
+    
+    
     
     @Test
     public void testRun() {
