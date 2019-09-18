@@ -14,7 +14,7 @@ public class App {
     Scanner in = new Scanner(System.in);
     PrintStream out = System.out;
     int a,b,c,d,e, counter = 0;
-    int expenses = 0;
+    int expenses;
     
  public static void main(String[] args) throws Exception {   
  App app = new App();
