@@ -23,8 +23,16 @@ public class App {
  
   void run()
   {
+      while (true) {
+      solve();
+      if (finished()) break;
+      print();
+      }
+  }
  
-  while (counter < 10)
+  void solve() 
+  {    
+  while (counter < 5)
   {
        a = in.nextInt();
        if (a < 0)
@@ -49,6 +57,15 @@ public class App {
        
        counter++;
      }
+  }
+  
+  boolean finished() 
+    {
+        return (a == 0 && b == 0 && c == 0 && d == 0 && e == 0);
+    }
+  
+void print()
+    {
   out.println(expenses);
     }
 }

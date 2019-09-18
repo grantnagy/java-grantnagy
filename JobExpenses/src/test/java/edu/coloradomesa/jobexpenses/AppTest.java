@@ -91,20 +91,16 @@ public class AppTest {
     public void testSample3() {
         testSample(3);
     }
-
-
     @Test
-    public void testWrite3() {
-        String expect = "2" + System.lineSeparator();
-        App app = new App();
-        var bos = new ByteArrayOutputStream();
-        app.out = new PrintStream(bos);
-        app.expenses = 2;
-        app.out.close();
-        String result = bos.toString();
-        assertEquals(expect, result);
+    public void testFinished() {
+        App app = ex1();
+        app.a = 0;
+        app.b = 0;
+        app.c = 0;
+        app.d = 0;
+        app.e = 0;
+        assertTrue(app.finished());
     }
-
 
     @Test
     public void testRun() {
