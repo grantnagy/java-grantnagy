@@ -4,5 +4,5 @@ This does not solve the [jobexpenses](https://open.kattis.com/problems/jobexpens
 
 ![kattis](kattis.png)
 
-![test](test.png)
+![test](tests.png)
 
