@@ -12,7 +12,8 @@
 
 | Assignment | Due Date | Done | Location | Notes |
 |-----------:|:--------:|:----:|:---------|:------|
-| 1 - C++ Hello  | unknown |  ☑   | [src and tests](https://github.com/grantnagy/java-grantnagy/tree/master/hi) | Test C++ function with Google Test |
+| 1 - C++ Hello  | unknown |  ☑   | [src and tests](https://github.com/grantnagy/java-grantnagy/tree/master/hi) | Done |
+| 2 - Kattis #1  | 9-19-19 |  ☒   | [src and tests](https://github.com/grantnagy/java-grantnagy/tree/master/JobExpenses) | Currently Not Working |
 
 ## References
 
@@ -21,3 +22,4 @@
 1. [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
+https://github.com/grantnagy/java-grantnagy/tree/master/JobExpenses
