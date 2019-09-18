@@ -2,7 +2,7 @@
 
 This does not solve the [jobexpenses](https://open.kattis.com/problems/jobexpenses) problem.
 
-![kattis](kattis.png)
+![kattis](kattis.PNG)
 
-![test](tests.png)
+![test](tests.PNG)
 
