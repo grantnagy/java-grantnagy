@@ -4,31 +4,38 @@
  * and open the template in the editor.
  */
 package edu.coloradomesa.jobexpenses;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
+import java.io.PrintStream;
+import java.util.Scanner;
 /**
  *
  * @author Grant
  */
 public class App {
+    Scanner in = new Scanner(System.in);
+    PrintStream out = System.out;
+    
 
-    public static void main(String[] args) throws Exception {
-
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-
-        int a, expenses = 0;
-
+ public static void main(String[] args) throws Exception {   
+ App app = new App();
+ app.main();
+ }
+ 
+  void main() 
+  {
+      int a, expenses = 0; //a = represents ki
+      
         a = in.nextInt();
-        for (int i = 0; i < a; i--) {
-            int b;
-            b = in.nextInt();
-            if (b < 0) {
-                expenses += -b;
-            }
-
-            System.out.println(expenses);
-
-        }
+        
+   for(int i = 0; i < a; i++)
+       {
+           int b = in.nextInt();
+           if (b < 0) {
+               expenses += -b;
+           }
+       }
+ 
+  out.println(expenses);
+  
+  }
+}
+  
