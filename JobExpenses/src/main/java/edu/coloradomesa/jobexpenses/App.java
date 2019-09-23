@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class App {
     Scanner in = new Scanner(System.in);
     PrintStream out = System.out;
-    
+    int a, b, expenses = 0;
 
  public static void main(String[] args) throws Exception {   
  App app = new App();
@@ -22,7 +22,7 @@ public class App {
  
   void main() 
   {
-      int a, expenses = 0; //a = represents ki
+   //a = represents ki
       
         a = in.nextInt();
         
