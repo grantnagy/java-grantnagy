@@ -4,29 +4,36 @@
  * and open the template in the editor.
  */
 package edu.coloradomesa.collections;
+
+
 import java.io.PrintStream;
-import java.util.List;
 import java.util.Scanner;
 import org.junit.*;
 import static org.junit.Assert.*;
+
 /**
  *
  * @author Grant
  */
 public class AppTest {
 
- 
     @Test
-    public void testArray() {
+    public void testDuplicate() {
         App app = new App();
-        app.mySet.add(1);
-        app.mySet.add(2);
-        app.mySet.add(3);
-       boolean expect = false;
-       boolean result = app.mySet.add(2);
-       assertEquals(expect, result);
+        app.initset();
+        boolean expect = false;
+        boolean result = app.mySet.add("Broncos");
+        assertEquals(expect, result);
     }
- 
-   
-   
+    @Test
+    public void testSearch() {
+        App app = new App();
+        app.initset();
+        app.in = new Scanner("Broncos");
+        app.main();
+        String expect = " is from Colorado.";
+        String result = PrintStream;
+        assertEquals(expect, result);
+    }
+
 }
