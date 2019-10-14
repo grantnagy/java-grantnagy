@@ -1,1 +1,2 @@
-Purpose of program is to show differences between hashset and arraylist.
+This program creates a hashset of Colorado sports teams.
+You can search to see if your favorite team is in the set.
