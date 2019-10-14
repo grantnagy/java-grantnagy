@@ -14,6 +14,7 @@
 |-----------:|:--------:|:----:|:---------|:------|
 | 1 - C++ Hello  | unknown |  ☑   | [src and tests](https://github.com/grantnagy/java-grantnagy/tree/master/hi) | Done |
 | 2 - Kattis #1  | 9-19-19 |  ☑   | [src and tests](https://github.com/grantnagy/java-grantnagy/tree/master/JobExpenses) | Completed |
+| 3 - Collections  | 10-17-19 |  x   | [src and tests](https://github.com/grantnagy/java-grantnagy/tree/master/Collections) | In Progress |
 
 ## References
 
