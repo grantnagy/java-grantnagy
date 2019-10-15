@@ -17,39 +17,36 @@ public class App {
     Scanner in = new Scanner(System.in);
     PrintStream out = System.out;
     Set<String> mySet = new HashSet<>();
-    
 
     public static void main(String[] args) throws Exception {
         App app = new App();
         app.initset();
+        app.text();
         app.main();
-        
+
+    }
+
+    void text() {
+        System.out.println("Is your favorite sports team from Colorado? Enter your favorite team.");
+        System.out.println("type 'exit' to exit");
     }
 
     void main() {
-     
-        System.out.println("Is your favorite sports team from Colorado? Enter your favorite team.");
-        System.out.println("type 'exit' to exit");
-        
+
         while (in.hasNext()) {
             String inputString = in.nextLine();
-        if(mySet.contains(inputString))
-        {
-            System.out.println(inputString + " is from Colorado.");
-        }
-        else if(inputString.equals("exit"))
-        {
-            break;
-        }
-        else
-        {
-           System.out.println(inputString + " is not from Colorado or isn't cool enough to be in set."); 
-        }
+            if (mySet.contains(inputString)) {
+                System.out.println(inputString + " are from Colorado.");
+            } else if (inputString.equals("exit")) {
+                break;
+            } else {
+                System.out.println(inputString + " are not from Colorado.");
+            }
         }
     }
 
     void initset() {
-        
+
         mySet.add("Broncos");
         mySet.add("Avalanche");
         mySet.add("Rockies");
