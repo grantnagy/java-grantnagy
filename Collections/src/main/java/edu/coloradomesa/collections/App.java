@@ -28,6 +28,7 @@ public class App {
 
     void text() {
         System.out.println("Is your favorite sports team from Colorado? Enter your favorite team.");
+        System.out.println("type 'show' to show all teams");
         System.out.println("type 'exit' to exit");
     }
 
@@ -39,9 +40,15 @@ public class App {
                 System.out.println(inputString + " are from Colorado.");
             } else if (inputString.equals("exit")) {
                 break;
+            } else if (inputString.equals("show")) {
+                System.out.println("Teams from Colorado:");
+                mySet.forEach((aString) -> {
+                    System.out.println(aString);
+                });
             } else {
                 System.out.println(inputString + " are not from Colorado.");
             }
+
         }
     }
 
