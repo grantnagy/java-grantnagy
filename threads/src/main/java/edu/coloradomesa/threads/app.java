@@ -12,8 +12,8 @@ package edu.coloradomesa.threads;
  */
 public class app {
 
-    private int number = 0;
-    private int number2 = 0;
+ int number = 0;
+ int number2 = 0;
 
     public static void main(String[] args) {
         app app = new app();
