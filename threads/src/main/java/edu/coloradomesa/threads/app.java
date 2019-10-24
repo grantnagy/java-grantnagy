@@ -5,26 +5,44 @@
  */
 package edu.coloradomesa.threads;
 
+
 /**
  *
  * @author Grant
  */
 public class app {
-   
-    public static class MyThread extends Thread {
-    @Override
-        public void run(){
-            System.out.println("Hello World");
-            
-    }
+
+    private int number = 0;
+
+    public static void main(String[] args) {
+        app app = new app();
+        app.generator();
     }
 
-    public static void main(String[] args) throws Exception { 
-        Thread myThread = new MyThread();
-        
-        myThread.start();
-    
-    
+    public void generator() {
+            Thread t1 = new Thread(() -> {
+                for (int i = 0; i < 100000; i++)
+                    add();
+            });
+             Thread t2 = new Thread(() -> {
+                 for (int i = 0; i < 100000; i++)
+                     subtract();
+            });
+             
+             t1.start();
+             t2.start();
+             
+             try {
+                 t1.join();
+             }
+             catch (InterruptedException e) {
+             }
+             System.out.println("Number: " + number);
     }
-
+    public void add() {
+        number++;
+    }
+    public void subtract() {
+        number--;
+    }
 }
